@@ -12,7 +12,7 @@ function Create() {
 
 return(
     <div>
-        <h4>Create a Todo</h4>
+        <h3>Create a Todo</h3>
         <form onSubmit={createTheTodo}>
             <input type='text' name='description' id='dsc'/>
             <input type='submit'/>

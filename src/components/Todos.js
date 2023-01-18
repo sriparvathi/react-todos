@@ -14,12 +14,13 @@ export default function Todos() {
 
     return(
         <div>
-            <ul>
+            <h1 className="heading">To Do list</h1>
+            <ul className="alltodos">
             {todos.map((todo) => {
                 return (
                     <div>
-                        {todo.complete ? <li style = {{textDecorationLine: "line-through"}}><a href={`/${todo._id}`}>{todo.description}</a></li> : 
-                        <li style = {{color: "RED", borderRadius:"5px", backgroundColor: "greenyellow"}}><a href={`/${todo._id}`}>{todo.description}</a></li>}
+                        {todo.complete ? <li style = {{textDecorationLine: "line-through", Color: "white"}}><a href={`/${todo._id}`}>{todo.description}</a></li> : 
+                        <li style = {{backgroundColor: "green"}}><a href={`/${todo._id}`}>{todo.description}</a></li>}
                     </div>
                     
                 )

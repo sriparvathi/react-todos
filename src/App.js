@@ -7,8 +7,8 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 const App = () => {
  
   return (
-    <div className="App">
-      ToDo list
+    <div className="container">
+      
       <Router>
       <Routes>
         <Route path = '/' element = {<Todos/>}></Route>
