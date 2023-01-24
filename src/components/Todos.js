@@ -21,7 +21,7 @@ export default function Todos() {
             {todos.map((todo) => {
                 return (
                     <div>
-                    <Link to={`/${todo._id}`}>{todo._id}</Link>
+                    <Link to={`/${todo._id}`}>{todo.description}</Link>
                     </div>
                     // <div>
                     //     {todo.complete ? <li style = {{textDecorationLine: "line-through", Color: "white"}}><a href={`/${todo._id}`}>{todo.description}</a></li> : 
